@@ -17,9 +17,9 @@ function About(){
     function showAbout(){
       return(
         <section className="text-center mx-auto pt-4">
-            <h1>Think & Share (h1)</h1>
+            <h1>Think & Share</h1>
 
-            <h4>Think about something... and share it with us!(h4)</h4>
+            <h4>Think about something... and share it with us!</h4>
 
             <hr className="my-4"/>
 
