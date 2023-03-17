@@ -17,7 +17,7 @@ function Home(){
             try {
                 await axios({
                     method: "GET",
-                    
+                    withCredentials: true,
                     url: URL,
                   }).then((res) => {
                     setUser(res.data);
@@ -46,7 +46,7 @@ function Home(){
                   username: email,
                   password: password,
                 },
-                
+                withCredentials: true,
                 url: URL+"login",
               }).then((res) => {
                   console.log(res)
@@ -141,7 +141,7 @@ function Home(){
             try {
                 axios({
                     method: "GET",
-                    
+                    withCredentials: true,
                     url: URL,
                   }).then((res) => {
                     setUser(res.data);
@@ -181,7 +181,7 @@ function Home(){
                     likes:[],
                     picture:document.getElementById('imageLink').innerHTML    
                 },
-                
+                withCredentials: true,
                 url:URL+user.currentUser._id+"/newPost/",
               }).then((res) => refresh());
             const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -401,7 +401,7 @@ function Home(){
                                         date:postDate,
                                         content:document.getElementById('writeComment'+p.id).value    
                                     },
-                                    
+                                    withCredentials: true,
                                     url:URL+p.author+"/posts/"+p.id+"/newComment",
                                 }).then((res) => refresh()); 
                                 document.getElementById('writeComment'+p.id).value=""
