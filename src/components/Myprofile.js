@@ -374,7 +374,7 @@ function Myprofile() {
                                             {findName()}
                                             </a></h4>
                                                         </div>
-                                                        <p className="card-text">{p.caption}</p>
+                                                        <p className="card-text mt-3">{p.caption}</p>
                                                         <p className="card-text"><small className="text-muted">{p.date}</small></p>
                                                     </div>
                                                     {withImage()}
