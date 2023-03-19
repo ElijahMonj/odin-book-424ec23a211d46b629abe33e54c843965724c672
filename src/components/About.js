@@ -92,7 +92,7 @@ function About(){
                   <div className="col-lg-4 col-md-12">
                     <h5>Mission</h5>
 
-                    <p className="small text-muted text-uppercase mb-0">Out Mission</p>
+                    <p className="small text-muted text-uppercase mb-0">Our Mission</p>
                     <p className="small text-muted mb-2">
                       
                     </p>
@@ -119,7 +119,7 @@ function About(){
             <div className="container madeWithLinks">
               <div className="row text-center">
                 <div className="col">
-                  <h6>Made</h6>
+                  <h6>Made with:</h6>
                 </div>
              </div>
 
