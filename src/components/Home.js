@@ -264,7 +264,7 @@ function Home(){
 
                                     <div className="text-center pt-1 mb-5 pb-1 d-grid">
                                         <button className="btn btn-block fa-lg gradient-custom-2 mb-3" id="postButton" type="submit">Log in</button>
-                                        <a className="text-muted" href="#!">Forgot password?</a>
+                                        <a className="text-muted" href="#!">Forgot password? (Beta)</a>
                                     </div>
 
                                     <div className="d-flex align-items-center justify-content-center pb-4">
@@ -295,7 +295,11 @@ function Home(){
         }else if(user===0){
             
             return(
-                <div>LOADING....</div>
+                <div className="container-fluid h-75 d-flex justify-content-center flex-column align-items-center">
+                    <div className="spinner-border" style={{width: "3rem", height: "3rem"}} role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
             )
         }else if(user.username!=="Please Login"){
             

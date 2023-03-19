@@ -103,7 +103,7 @@ function Signup(){
                                     </div>
 
                                     <div className="form-outline mb-4 form-floating">
-                                        <input type="password" required id="password" maxLength={30} minLength={8} className="form-control" name="password" placeholder="Password" />
+                                        <input type="password" required id="password" maxLength={30} minLength={8} className="form-control" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
                                         <label className="form-label" htmlFor="password" >Password</label>
                                     </div>
 

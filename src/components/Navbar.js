@@ -109,7 +109,7 @@ function NavigationBar() {
     function isLoggedIn(){
             if ((user === 0)||(user === 1)) {
               return(
-                <div>LOADING....</div>
+                <div></div>
               )
             } if(user.username!=="Please Login"){
             return (  

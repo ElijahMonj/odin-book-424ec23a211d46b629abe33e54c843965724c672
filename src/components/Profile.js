@@ -125,7 +125,11 @@ function Profile(){
     function isAuthenticated(){
         if(user===0){
             return(
-                <div>LOADING....</div>
+                <div className="container-fluid h-75 d-flex justify-content-center flex-column align-items-center">
+                    <div className="spinner-border" style={{width: "3rem", height: "3rem"}} role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
             )
         }else if(user===1||user.username==="Please Login"){
             navigate('/')
