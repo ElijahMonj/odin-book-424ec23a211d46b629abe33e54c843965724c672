@@ -10,8 +10,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logoDark from "./images/TS_Dark.png"
-import logoLong from "./images/TS_long.png"
+import logoDark from "./images/TS_Dark.svg"
+import logoLight from "./images/TS_light.svg"
+
 import { useNavigate } from 'react-router-dom';
 
 function NavigationBar() {
@@ -114,14 +115,15 @@ function NavigationBar() {
             return (  
                 <>
                   {['md'].map((expand) => (
-                    <Navbar key={expand} bg="" expand={expand} className="">
+                    <Navbar key={expand} bg="" expand={expand} >
 
                       <Container fluid>
-                        <Navbar.Brand ><Link to="/" ><img
-                                    src={logoLong}
-                                    height="30"
+                        <Navbar.Brand className="p-0"><Link to="/" ><img
+
+                                    src={logoLight}
+                                    height="40"
                                     
-                                    alt="MDB Logo"
+                                    alt="TS Logo"
                                     loading="lazy"
                                 /></Link></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

@@ -4,8 +4,8 @@ import { useState,useEffect } from "react";
 import {Link, NavLink} from 'react-router-dom'
 import NavigationBar from './Navbar'
 import { useNavigate } from 'react-router-dom';
-import logoDark from "./images/TS_Dark.png"
-import logoLight from "./images/TS_light.png"
+import logoDark from "./images/TS_Dark.svg"
+import logoLight from "./images/TS_light.svg"
 
 function Home(){
     
@@ -243,7 +243,7 @@ function Home(){
                                 <div className="card-body p-md-5 mx-md-4" >
 
                                     <div className="text-center">
-                                    <img src={logoLight}
+                                    <img src={logoDark}
                                         style={{width: 185}} alt="logo"/>
                                     <h4 className="mt-1 mb-5 pb-1">Think & Share</h4>
                                     </div>

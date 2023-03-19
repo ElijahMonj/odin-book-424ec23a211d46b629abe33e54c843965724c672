@@ -5,7 +5,7 @@ import NavigationBar from "./Navbar";
 import aboutLogo from "./images/about.png"
 import missionLogo from "./images/mission.png"
 import visionLogo from "./images/vision.png"
-
+import logoDark from "./images/TS_Dark.svg"
 import BootstrapLogo from "./images/bootstrap.png"
 import ExpressLogo from "./images/express.png"
 import ReactLogo from "./images/react.png"
@@ -17,10 +17,11 @@ function About(){
     function showAbout(){
       return(
         <section className="text-center mx-auto pt-4">
+          
             <h1>Think & Share</h1>
-
+            <img src={logoDark} style={{height:200}}/>
             <h4>Think about something... and share it with us!</h4>
-
+            
             <hr className="my-4"/>
 
             <h3>What is Think & share?</h3>
