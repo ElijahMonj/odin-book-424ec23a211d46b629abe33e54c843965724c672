@@ -399,7 +399,11 @@ function Settings(){
                         </div>
                         <div className="modal-body">
                         <form id="formChangePassword" onSubmit={formChangePassword} >
-                                    
+                        <div className="form-outline form-floating">
+                                        <input maxLength={30} required type="password" id="confirmChangePasswordPassword" className="form-control" onChange={onChangePasswordRemoveError} name="confirmChangePasswordPassword" placeholder=" Confirm Password" />
+                                        <label className="form-label" htmlFor="confirmChangePasswordPassword" id="labelConfirmChangePasswordPassword">Current Password</label>
+
+                                    </div>
                                     <div className="form-outline mb-4 form-floating">
                                         <input type="password" id="password" className="form-control" name="password"
                                         placeholder="Password" required maxLength={30} minLength={8} onChange={onChangePasswordRemoveError}/>
@@ -411,11 +415,7 @@ function Settings(){
                                         <label className="form-label" htmlFor="changePasswordPassword" id="labelChangePasswordPassword">Confirm New Password</label>
                                     </div>
 
-                                    <div className="form-outline form-floating">
-                                        <input maxLength={30} required type="password" id="confirmChangePasswordPassword" className="form-control" onChange={onChangePasswordRemoveError} name="confirmChangePasswordPassword" placeholder=" Confirm Password" />
-                                        <label className="form-label" htmlFor="confirmChangePasswordPassword" id="labelConfirmChangePasswordPassword">Current Password</label>
-
-                                    </div>
+                                    
 
                                 </form>
                         </div>
