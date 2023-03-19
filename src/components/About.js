@@ -35,12 +35,12 @@ function About(){
                   <div className="col-lg-4 col-md-12">
                     <h5>About</h5>
 
-                    <p className="small text-muted text-uppercase mb-0">Component subheading</p>
+                    <p className="small text-muted text-uppercase mb-0">About Us</p>
                     <p className="small text-muted mb-2">
                       
                     </p>
 
-                    <h6>Component alternative subheading (h6)</h6>
+                   
 
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam
@@ -49,28 +49,28 @@ function About(){
                     </p>
 
                   </div>
-                  <div className="col-lg-4 col-md-12 mb-4 d-flex justify-content-center">
+                  <div className="col-lg-4 col-md-12 d-flex justify-content-center">
                     
                   <img src={aboutLogo}
                     alt="" className="img-fluid m-auto"
-                    style={{objectFit:"cover", height:190,zIndex: 1}}/>
+                    style={{objectFit:"cover", height:160,zIndex: 1}}/>
 
                   </div>
               </div>
              
               <hr className="my-4"/>
              
-              <div className="row d-flex flex-row-reverse justify-content-center m-0">
+              <div className="row d-flex flex-row-reverse justify-content-center m-0 mb-5">
                 
                   <div className="col-lg-4 col-md-12">
                     <h5>Vision</h5>
 
-                    <p className="small text-muted text-uppercase mb-0">Component subheading</p>
+                    <p className="small text-muted text-uppercase mb-0">Our Vision</p>
                     <p className="small text-muted mb-2">
                       
                     </p>
 
-                    <h6>Component alternative subheading (h6)</h6>
+                    
 
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam
@@ -79,10 +79,10 @@ function About(){
                     </p>
 
                   </div>
-                  <div className="col-lg-4 col-md-12 mb-4 d-flex justify-content-center">
+                  <div className="col-lg-4 col-md-12 d-flex justify-content-center">
                   <img src={visionLogo}
                     alt="" className="img-fluid m-auto"
-                    style={{objectFit:"cover", height:190,zIndex: 1}}/>
+                    style={{objectFit:"cover", height:160,zIndex: 1}}/>
                 </div>
 
               </div>
@@ -91,12 +91,12 @@ function About(){
                   <div className="col-lg-4 col-md-12">
                     <h5>Mission</h5>
 
-                    <p className="small text-muted text-uppercase mb-0">Component subheading</p>
+                    <p className="small text-muted text-uppercase mb-0">Out Mission</p>
                     <p className="small text-muted mb-2">
                       
                     </p>
 
-                    <h6>Component alternative subheading (h6)</h6>
+                   
 
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam
@@ -105,10 +105,10 @@ function About(){
                     </p>
 
                   </div>
-                  <div className="col-lg-4 col-md-12 mb-4 d-flex justify-content-center">
+                  <div className="col-lg-4 col-md-12 d-flex justify-content-center">
                   <img src={missionLogo}
                     alt="" className="img-fluid m-auto"
-                    style={{objectFit:"cover", height:190,zIndex: 1}}/>
+                    style={{objectFit:"cover", height:160,zIndex: 1}}/>
 
                   </div>
               </div>
@@ -118,7 +118,7 @@ function About(){
             <div className="container madeWithLinks">
               <div className="row text-center">
                 <div className="col">
-                  Made With:
+                  <h6>Made</h6>
                 </div>
              </div>
 
@@ -159,9 +159,9 @@ function About(){
             <footer className="bg-light text-center text-lg-start">
   
 
-            <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+            <div className="text-center p-3 text-light" style={{backgroundColor: "#14274E"}}>
               © 2023 Copyright: 
-              <a className="text-dark m-1"  href="https://mdbootstrap.com/">Elijah Monjardin</a> - All rights reserved.
+              <a className="text-light m-1"  href="https://elijahmonjardin.me/">Elijah Monjardin</a> - All rights reserved.
 
             </div>
 
