@@ -135,7 +135,7 @@ function NavigationBar() {
                         
                           <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                              Offcanvas
+                              Think & Share
                             </Offcanvas.Title>
                           </Offcanvas.Header>
                           
@@ -157,11 +157,11 @@ function NavigationBar() {
                               </div>
                             </Form>
                             
-                            <Nav className="justify-content-end flex-grow-1 pe-3" style={{gap:1}}>
+                            <Nav className="justify-content-end flex-grow-1 pe-3" style={{}}>
                               
                               <NavDropdown 
                               align="end"
-                              className="align-items-center notifIcon"
+                              className="align-items-center notifIcon m-1"
                               
                               title={
                                 <div className="notif pull-left ">
@@ -171,7 +171,7 @@ function NavigationBar() {
                                 </div>
                               } 
                                 id={`offcanvasNavbarDropdown-expand-${expand}`}
-
+                               
                                 >
                                 
                                 <h4 className="ms-3 text-break" style={{width:229}}>Notifications</h4>
@@ -220,6 +220,7 @@ function NavigationBar() {
                               
                               <NavDropdown 
                               align="end"
+                              className="m-1"
                               title={
                                   <div className="pull-left">
                                       <img className="thumbnail-image rounded-circle" 
