@@ -256,7 +256,7 @@ function Profile(){
                         console.log(user.currentUser._id)
                         if(user.currentUser.following.includes(userProfile._id)){
                             return(
-                                <button className="btn btn-outline-dark btn-sm" id="unfollow" onClick={unfollow}>Unfollow</button>
+                                <button className="btn btn-outline-dark btn-sm " id="unfollow" onClick={unfollow}>Unfollow</button>
                             )
                         }else{
                             return(
@@ -285,19 +285,21 @@ function Profile(){
                                             style={{maxWidth: 150, maxHeight: 150,minHeight: 150, minWidth: 150,objectFit:"cover",zIndex: 1}}/>
                                         
                                         </div>
-                                        <div className="ms-3 col-sm-8 d-flex align-items-end">
+                                        <div className=" col-sm-8 d-flex align-items-end">
                                             <div>
                                                 <h5 className="text-break">{userProfile.firstName+" "+userProfile.lastName}</h5>
                                                 <p className="text-break">{userProfile.email}</p>
                                             </div>       
                                         </div>
                                     </div>
-                                    <div className="p-4 text-black d-flex justify-content-between" style={{backgroundColor: "#f8f9fa"}}>
+
+
+                                    <div className="p-4 text-black d-flex justify-content-between flex-wrap" style={{backgroundColor: "#f8f9fa"}}>
                                         <div className="mt-auto mb-auto">
                                             {isFollowed()}
                                         </div>
                                     
-                                        <div className="d-flex justify-content-end text-center py-1">
+                                        <div className="d-flex justify-content-end text-center py-1 col">
                                         
                                         <div>
                                             <p className="mb-1 h5">{userProfile.posts.length}</p>
@@ -347,6 +349,8 @@ function Profile(){
                                         </div>
                                         </div>
                                     </div>
+
+
                                     <div className="card-body p-4 text-black">
                                         <div className="mb-5">
                                         <div className="d-flex justify-content-between align-items-center">
